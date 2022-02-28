@@ -6,15 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/log in.css">
-    <title>Document</title>
+    <!-- <link rel="stylesheet" href="http://localhost/youcode/4test/view/assets/css/home.css"> -->
+    <title>Sign Up</title>
+
+
+    <style>
+
+      :root{
+          --bg-color:#F5F7FC;
+      }
+      
+      body{
+          background-color: var(--bg-color)  ;
+      }
+    </style>
+
 </head>
 <body>
     <!-- navbar -->
     <div class="image_bg">
         <nav class="navbar navbar-expand-md bg-dark navbar-dark">
             <div class="container">
-                <a href="#" class="navbar-brand">BOURAQ</a>
+                <a href="http://localhost/youcode/4test/view/index.php" class="navbar-brand">BOURAQ</a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" >
                     <span class="navbar-toggler-icon"></span>
@@ -23,7 +36,10 @@
                 <div class="collapse navbar-collapse" id="navmenu">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a href="../index.html" class="nav-link">Home</a>
+                            <a href="http://localhost/youcode/4test/view/index.php" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="http://localhost/youcode/4test/view/booking.php" class="nav-link">Booking</a>
                         </li>
                     </ul>
                 </div>
@@ -67,14 +83,14 @@
                 <div class="text-center text-lg-start mt-4 pt-2">
                     <button class="btn btn-primary btn-lg" type="submit" name="submit">Sign Up</button>
                     <p class="small fw-bold mt-2 pt-1 mb-0">Have an account 
-                      <a href="sign in.html"class="link-danger">Sign in</a>
+                      <a href="http://localhost/youcode/4test/view/signIn.php"class="link-danger">Sign in</a>
                     </p>
                 </div>
       
               </form>
             </div>
             <div class="col-md-9 col-lg-6 col-xl-5">
-                <img src="../assets/3.png" class="img-fluid" alt="Sample image">
+                <img src="http://localhost/youcode/4test/view/assets/img/3.png" class="img-fluid" alt="Sample image">
             </div>
           </div>
         </div>
