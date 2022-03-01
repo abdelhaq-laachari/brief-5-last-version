@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/a5f900a4a3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="http://localhost/youcode/4test/view/assets/css/dashboard.css">
     <link rel="stylesheet" href="http://localhost/youcode/4test/view/assets/css/sidebar.css">
-    <link rel="stylesheet" href="http://localhost/youcode/4test/view/assets/css/add_trip.css">
+    <link rel="stylesheet" href="http://localhost/youcode/4test/view/assets/css/new_booking.css">
     <title>dashboard</title>
 </head>
 <body id="body-pd">
@@ -23,18 +23,18 @@
                     <a href="#" class="nav__logo">Book Your Train</a>
                 </div>
                 <div class="nav__list">
-                    <a href="http://localhost/youcode/4test/view/admin/dashboard.php" class="nav__link">
-                        <i class="fa-solid fa-house" style="font-size: 1.3rem;"></i>
-                        <span class="nav__name">Dashboard</span>
+                    <a href="http://localhost/youcode/4test/view/client/profile.php" class="nav__link">
+                        <i class="fa-solid fa-user" style="font-size: 1.5rem;"></i>
+                        <span class="nav__name">Profile</span>
                     </a>
-                    <a href="http://localhost/youcode/4test/view/admin/add_trip.php" class="nav__link active">
+                    <a href="http://localhost/youcode/4test/view/client/new_booking.php" class="nav__link active">
                         <i class="fa-solid fa-plus" style="font-size: 1.5rem;"></i>
-                        <span class="nav__name">Add Trip</span>
+                        <span class="nav__name">New Booking</span>
                     </a>
 
-                    <a href="http://localhost/youcode/4test/view/admin/display_client.php" class="nav__link">
-                        <i class="fa-solid fa-users" style="font-size: 1.3rem;"></i>
-                        <span class="nav__name">Client</span>
+                    <a href="#" class="nav__link">
+                        <i class="fa-solid fa-suitcase-rolling" style="font-size: 1.5rem;"></i>
+                        <span class="nav__name">My Trip</span>
                     </a>
                 </div>
             </div>
@@ -50,15 +50,15 @@
     <!-- include header -->
     <div class="header">
         <div class="title">
-            <h5>Online Ticket Reservation System</h5>
+            <h5>User Profile</h5>
         </div>
         <div class="profile">
             <div class="pics">
-                <img src="http://localhost/youcode/4test/view/assets/img/11.jpg" alt="">
+                <img src="http://localhost/youcode/4test/view/assets/img/12.jpg" alt="">
             </div>
             <div class="name" >
-               <span> Eric Parker </span>
-               <span class=" text-muted"> Admin</span>
+               <span> William Hawkins </span>
+               <span class=" text-muted"> Client</span>
             </div>
         </div>
     </div>
@@ -67,8 +67,7 @@
 
     <!-- section -->
 
-    <!-- form -->
-
+    <!-- first -->
     <div class="first-form">
             <div class="form form-depart">
                 <select class="form-select" aria-label="Default select example">
@@ -98,7 +97,7 @@
             </div>
             <div class="form form-place">
                 <form action="" class="date">
-                    <label for="">Nombre De places</label>
+                    <label for="">Voyageurs</label>
                     <input type="number" name="" class="inp" placeholder="1">
                 </form>
                 <div  class="date">
@@ -111,7 +110,7 @@
                 </div>
             </div>
             <div class="search d-grid gap-2 col-6 mx-auto">
-                <button class="btn btn-success" type="button">Add</button>
+                <button class="btn btn-primary" type="button">Search</button>
             </div>
         </div>
 

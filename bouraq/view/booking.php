@@ -13,7 +13,7 @@
     <div class="first">
         <nav class="navbar navbar-expand-md bg-dark navbar-dark">
             <div class="container">
-                <a href="http://localhost/youcode/4test/view//index.php" class="navbar-brand">BOURAQ</a>
+                <a href="http://localhost/youcode/4test/view//index.php" class="navbar-brand">Book Your Train</a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" >
                     <span class="navbar-toggler-icon"></span>
@@ -64,7 +64,7 @@
             <div class="form form-place">
                 <form action="" class="date">
                     <label for="">Voyageurs</label>
-                    <input type="number" name="" class="inp">
+                    <input type="number" name="" class="inp" placeholder="1">
                 </form>
                 <div  class="date">
                     <label for="">Mon confort</label>
@@ -75,7 +75,7 @@
                     </select>
                 </div>
             </div>
-            <div class="d-grid gap-2 col-6 mx-auto">
+            <div class="search d-grid gap-2 col-6 mx-auto">
                 <button class="btn btn-primary" type="button">Search</button>
             </div>
         </div>

@@ -22,7 +22,7 @@
                     <a href="#" class="nav__logo">Book Your Train</a>
                 </div>
                 <div class="nav__list">
-                    <a href="http://localhost/youcode/4test/view/admin/dashboard.php" class="nav__link ">
+                    <a href="#" class="nav__link active">
                         <i class="fa-solid fa-house" style="font-size: 1.3rem;"></i>
                         <span class="nav__name">Dashboard</span>
                     </a>
@@ -31,7 +31,7 @@
                         <span class="nav__name">Add Trip</span>
                     </a>
 
-                    <a href="http://localhost/youcode/4test/view/admin/display_client.php" class="nav__link active">
+                    <a href="http://localhost/youcode/4test/view/admin/display_client.php" class="nav__link">
                         <i class="fa-solid fa-users" style="font-size: 1.3rem;"></i>
                         <span class="nav__name">Client</span>
                     </a>
@@ -66,23 +66,56 @@
 
     <!-- section -->
 
-    
+    <!-- first section -->
+
+    <div class="first">
+
+        <div class="card">
+            <div class="card-title">
+                <h5 class="text-primary">Total Trip</h5>
+                <span>2345</span>
+            </div>
+            <div class="icon">
+                <i class="fa-solid fa-train-subway" style="color: #000; font-size: 2.5rem;"></i>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">
+                <h5 class="text-warning">Active Trip</h5>
+                <span>2345</span>
+            </div>
+            <div class="icon">
+            <i class="fa-solid fa-list" style="color: #000; font-size: 2.5rem;"></i>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">
+                <h5 class="text-info">Total Earning</h5>
+                <span>2345</span>
+            </div>
+            <div class="icon">
+                <i class="fa-solid fa-dollar-sign" style="color: #000; font-size: 2.5rem;" ></i>
+            </div>
+        </div>
+    </div>
     <!-- second section -->
 
     <div class="second">
         <div class="second-title">
-            <h5>All Client</h5>
+            <h5>All Trip</h5>
             <a href="#">
-                <button type="button" class="btn btn-outline-danger">Delete Client</button>
+                <button type="button" class="btn btn-outline-success">Add Trip</button>
             </a>
         </div>
         <div class="table-responsive col-lg-12">
             <table class="table table-hover table-borderless">
                 <thead class="table-dark">
                     <tr>
-                        <th scope="col">Name</th>
-                        <th scope="col">Email Address</th>
-                        <th scope="col">Phone number</th>
+                        <th scope="col">Departure city</th>
+                        <th scope="col">Arrival city</th>
+                        <th scope="col">Date of departure</th>
+                        <th scope="col">arrival date</th>
+                        <th scope="col">Total Of Booking</th>
                         <th scope="col">Action</th>
                     </tr>
                 </thead>
@@ -91,8 +124,10 @@
                         <td>Mark</td>
                         <td>Otto</td>
                         <td>@mdo</td>
+                        <td>@mdo</td>
+                        <td>@mdo</td>
                         <td class="icon-table">
-                            <a href="#"><i class="fa-solid fa-pen" style="font-size: 1rem; color: green; margin-right:10px;"></i></a>
+                            <a href="#"><i class="fa-solid fa-pen" style="font-size: 1rem; color: green;"></i></a>
                             <a href="#"><i class="fa-solid fa-circle-minus" style="font-size: 1rem; color: red;"></i></a>
                         </td>
                     </tr>
@@ -100,8 +135,10 @@
                         <td>Jacob</td>
                         <td>Thornton</td>
                         <td>@fat</td>
+                        <td>@fat</td>
+                        <td>@fat</td>
                         <td class="icon-table">
-                            <a href="#"><i class="fa-solid fa-pen" style="font-size: 1rem; color: green; margin-right:10px;"></i></a>
+                            <a href="#"><i class="fa-solid fa-pen" style="font-size: 1rem; color: green;"></i></a>
                             <a href="#"><i class="fa-solid fa-circle-minus" style="font-size: 1rem; color: red;"></i></a>
                         </td>
                     </tr>
@@ -109,8 +146,10 @@
                         <td>Larry</td>
                         <td>the Bird</td>
                         <td>@twitter</td>
+                        <td>@twitter</td>
+                        <td>@twitter</td>
                         <td class="icon-table">
-                            <a href="#"><i class="fa-solid fa-pen" style="font-size: 1rem; color: green; margin-right:10px;"></i></a>
+                            <a href="#"><i class="fa-solid fa-pen" style="font-size: 1rem; color: green;"></i></a>
                             <a href="#"><i class="fa-solid fa-circle-minus" style="font-size: 1rem; color: red;"></i></a>
                         </td>
                     </tr>
