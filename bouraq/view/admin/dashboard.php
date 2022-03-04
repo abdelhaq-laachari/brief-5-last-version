@@ -26,19 +26,19 @@
                         <i class="fa-solid fa-house" style="font-size: 1.3rem;"></i>
                         <span class="nav__name">Dashboard</span>
                     </a>
-                    <a href="http://localhost/youcode/4test/view/admin/add_trip.php" class="nav__link">
+                    <a href="http://localhost/youcode/4test/trip" class="nav__link">
                         <i class="fa-solid fa-plus" style="font-size: 1.5rem;"></i>
                         <span class="nav__name">Add Trip</span>
                     </a>
 
-                    <a href="http://localhost/youcode/4test/view/admin/display_client.php" class="nav__link">
+                    <a href="http://localhost/youcode/4test/displayclient" class="nav__link">
                         <i class="fa-solid fa-users" style="font-size: 1.3rem;"></i>
                         <span class="nav__name">Client</span>
                     </a>
                 </div>
             </div>
 
-            <a href="#" class="nav__link">
+            <a href="http://localhost/youcode/4test/signinAdmin/LogOutAdmin" class="nav__link">
                 <ion-icon name="log-out-outline" class="nav__icon"></ion-icon>
                 <span class="nav__name">Log Out</span>
             </a>
@@ -47,20 +47,7 @@
 
 
     <!-- include header -->
-    <div class="header">
-        <div class="title">
-            <h5>Online Ticket Reservation System</h5>
-        </div>
-        <div class="profile">
-            <div class="pics">
-                <img src="http://localhost/youcode/4test/view/assets/img/11.jpg" alt="">
-            </div>
-            <div class="name" >
-               <span> Eric Parker </span>
-               <span class=" text-muted"> Admin</span>
-            </div>
-        </div>
-    </div>
+    <?php include '../4test/view/inc/adminHeader.php'   ?>
 
 
 
@@ -103,8 +90,9 @@
     <div class="second">
         <div class="second-title">
             <h5>All Trip</h5>
+           
             <a href="#">
-                <button type="button" class="btn btn-outline-success">Add Trip</button>
+                <button type="button" class="btn btn-outline-primary">Add Trip</button>
             </a>
         </div>
         <div class="table-responsive col-lg-12">
@@ -116,6 +104,7 @@
                         <th scope="col">Date of departure</th>
                         <th scope="col">arrival date</th>
                         <th scope="col">Total Of Booking</th>
+                        <th scope="col">Price</th>
                         <th scope="col">Action</th>
                     </tr>
                 </thead>
@@ -123,6 +112,7 @@
                     <tr>
                         <td>Mark</td>
                         <td>Otto</td>
+                        <td>@mdo</td>
                         <td>@mdo</td>
                         <td>@mdo</td>
                         <td>@mdo</td>
@@ -137,6 +127,7 @@
                         <td>@fat</td>
                         <td>@fat</td>
                         <td>@fat</td>
+                        <td>@fat</td>
                         <td class="icon-table">
                             <a href="#"><i class="fa-solid fa-pen" style="font-size: 1rem; color: green;"></i></a>
                             <a href="#"><i class="fa-solid fa-circle-minus" style="font-size: 1rem; color: red;"></i></a>
@@ -145,6 +136,7 @@
                     <tr>
                         <td>Larry</td>
                         <td>the Bird</td>
+                        <td>@twitter</td>
                         <td>@twitter</td>
                         <td>@twitter</td>
                         <td>@twitter</td>

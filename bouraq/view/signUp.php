@@ -62,7 +62,7 @@
                 <div class="text-center text-lg-start mt-4 pt-2">
                     <button class="btn btn-primary btn-lg" type="submit" name="submit">Sign Up</button>
                     <p class="small fw-bold mt-2 pt-1 mb-0">Have an account 
-                      <a href="http://localhost/youcode/4test/view/signIn.php"class="link-danger">Sign in</a>
+                      <a href="http://localhost/youcode/4test/signin"class="link-danger">Sign in</a>
                     </p>
                 </div>
       

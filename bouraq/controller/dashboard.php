@@ -1,17 +1,20 @@
 <?php
 
+session_start();
 
         class dashboard{
 
-
-            public function __construct()
-            {
-                
-            }
-
             public function index()
             {
-            require_once __DIR__."/../view/admin/dashboard.php";
+                if(!empty($_SESSION['idAdmin']))
+                {
+                    require_once __DIR__."/../view/admin/dashboard.php";
+                }
+                else{
+                    require_once __DIR__."/../view/admin/signIn.php";
+                }
+                
+            
             }
             
             

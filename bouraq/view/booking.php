@@ -11,26 +11,8 @@
 <body>
     
     <div class="first">
-        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-            <div class="container">
-                <a href="http://localhost/youcode/4test/view//index.php" class="navbar-brand">Book Your Train</a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navmenu">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a href="http://localhost/youcode/4test/view/index.php" class="nav-link">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="http://localhost/youcode/4test/view/signIn.php" class="nav-link">Sign In</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <!-- include navbar -->
+    <?php include 'inc/header.php'   ?>
 
         <!-- form -->
 

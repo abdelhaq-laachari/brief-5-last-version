@@ -22,23 +22,23 @@
                     <a href="#" class="nav__logo">Book Your Train</a>
                 </div>
                 <div class="nav__list">
-                    <a href="http://localhost/youcode/4test/view/admin/dashboard.php" class="nav__link ">
+                    <a href="http://localhost/youcode/4test/dashboard" class="nav__link ">
                         <i class="fa-solid fa-house" style="font-size: 1.3rem;"></i>
                         <span class="nav__name">Dashboard</span>
                     </a>
-                    <a href="http://localhost/youcode/4test/view/admin/add_trip.php" class="nav__link">
+                    <a href="http://localhost/youcode/4test/trip" class="nav__link">
                         <i class="fa-solid fa-plus" style="font-size: 1.5rem;"></i>
                         <span class="nav__name">Add Trip</span>
                     </a>
 
-                    <a href="http://localhost/youcode/4test/view/admin/display_client.php" class="nav__link active">
+                    <a href="http://localhost/youcode/4test/displayclient" class="nav__link active">
                         <i class="fa-solid fa-users" style="font-size: 1.3rem;"></i>
                         <span class="nav__name">Client</span>
                     </a>
                 </div>
             </div>
 
-            <a href="#" class="nav__link">
+            <a href="http://localhost/youcode/4test/displayClient/LogOutAdmin" class="nav__link">
                 <ion-icon name="log-out-outline" class="nav__icon"></ion-icon>
                 <span class="nav__name">Log Out</span>
             </a>
@@ -47,20 +47,7 @@
 
 
     <!-- include header -->
-    <div class="header">
-        <div class="title">
-            <h5>Online Ticket Reservation System</h5>
-        </div>
-        <div class="profile">
-            <div class="pics">
-                <img src="http://localhost/youcode/4test/view/assets/img/11.jpg" alt="">
-            </div>
-            <div class="name" >
-               <span> Eric Parker </span>
-               <span class=" text-muted"> Admin</span>
-            </div>
-        </div>
-    </div>
+    <?php include '../4test/view/inc/adminHeader.php'   ?>
 
 
 

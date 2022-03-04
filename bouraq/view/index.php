@@ -21,7 +21,7 @@
             <div class="title-btn">
                 <h1>Welcome to  <span class="text-danger"> Book Your Train </span></h1>
                 <p>we saves your time both while purchasing, the check-in and during the travel.</p>
-                <a href="http://localhost/youcode/4test/view/booking.php">
+                <a href="http://localhost/youcode/4test/booking">
                     <button class="btn btn-danger btn_lg ">Book Now</button>
                 </a>
             </div>
@@ -30,8 +30,6 @@
                 <img src="http://localhost/youcode/4test/view/assets/img/happy-tourists-choosing-hotel-booking-room-online-flat-illustration_74855-10811.png" alt="">
             </div>
     </div>
-
-
 
 
 
