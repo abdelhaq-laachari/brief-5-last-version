@@ -5,16 +5,10 @@ session_start();
 
 class SignInAdmin{
 
-//     public function authentication()
-// {
-//     $error="";
-//     require_once __DIR__."/../view/signIn.php";
-// }
-
-
     public function index()
     {
-    require_once __DIR__."/../view/admin/signIn.php";
+        $error = "";
+        require_once __DIR__."/../view/admin/signIn.php";
     
     }
 
@@ -34,13 +28,14 @@ class SignInAdmin{
             $_SESSION['name'] = $var['name'];
             $_SESSION['email'] = $email;
             $_SESSION['password'] = $password;
-            // print_r($_SESSION);
-            require_once __DIR__."/../view/admin/dashboard.php";
+            
+            // require_once __DIR__."/../view/admin/dashboard.php";
+            header("Location:http://localhost/youcode/4test/dashboard");
         }
         else{
             
-            // $error="incorrect email or password";
-            require_once __DIR__."/../view/admin/signIn.php";
+            $error = "Password or email is incorrect";
+            header("Location:http://localhost/youcode/4test/Signinadmin");
         }
     }
 
@@ -59,15 +54,10 @@ class SignInAdmin{
         session_destroy();
         print_r($_SESSION);
         header("Location: http://localhost/youcode/4test/home");
+        
         //require_once __DIR__."/../view/index.php";
     }
 
-
-
-    // public function add_trip()
-    // {
-    // require_once __DIR__."/../view/admin/add_trip.php";
-    // }
     
     
 }

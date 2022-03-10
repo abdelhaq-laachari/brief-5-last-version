@@ -2,14 +2,14 @@
 
 require_once "../4test/model/Connection.php";
 
-class DisplayClient extends Connection
+class Display extends Connection
 
 {
-    public function clients()
+    public function trips()
     {
        
-            
-            $query = "SELECT * FROM `client`";
+           
+            $query = "SELECT * FROM `trip`";
             $log = $this->conn()->prepare($query);
             $log->execute();
             $res = $log->fetchAll(PDO::FETCH_ASSOC);

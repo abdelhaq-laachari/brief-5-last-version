@@ -26,19 +26,19 @@
                         <i class="fa-solid fa-house" style="font-size: 1.3rem;"></i>
                         <span class="nav__name">Dashboard</span>
                     </a>
-                    <a href="http://localhost/youcode/4test/trip" class="nav__link">
+                    <!-- <a href="http://localhost/youcode/4test/trip" class="nav__link">
                         <i class="fa-solid fa-plus" style="font-size: 1.5rem;"></i>
                         <span class="nav__name">Add Trip</span>
-                    </a>
+                    </a> -->
 
-                    <a href="http://localhost/youcode/4test/displayclient" class="nav__link active">
+                    <a href="http://localhost/youcode/4test/displayclients" class="nav__link active">
                         <i class="fa-solid fa-users" style="font-size: 1.3rem;"></i>
                         <span class="nav__name">Client</span>
                     </a>
                 </div>
             </div>
 
-            <a href="http://localhost/youcode/4test/displayClient/LogOutAdmin" class="nav__link">
+            <a href="http://localhost/youcode/4test/displayClients/LogOutAdmin" class="nav__link">
                 <ion-icon name="log-out-outline" class="nav__icon"></ion-icon>
                 <span class="nav__name">Log Out</span>
             </a>
@@ -59,9 +59,9 @@
     <div class="second">
         <div class="second-title">
             <h5>All Client</h5>
-            <a href="#">
+            <!-- <a href="#">
                 <button type="button" class="btn btn-outline-danger">Delete Client</button>
-            </a>
+            </a> -->
         </div>
         <div class="table-responsive col-lg-12">
             <table class="table table-hover table-borderless">
@@ -70,37 +70,22 @@
                         <th scope="col">Name</th>
                         <th scope="col">Email Address</th>
                         <th scope="col">Phone number</th>
-                        <th scope="col">Action</th>
+                        <!-- <th scope="col">Action</th> -->
                     </tr>
                 </thead>
                 <tbody>
+               <?php foreach($getClients as $clients) : ?>
                     <tr>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td class="icon-table">
+                        <td><?=$clients['name'] ?></td>
+                        <td><?=$clients['email'] ?></td>
+                        <td><?=$clients['phone'] ?></td>
+                        <!-- <td class="icon-table">
                             <a href="#"><i class="fa-solid fa-pen" style="font-size: 1rem; color: green; margin-right:10px;"></i></a>
                             <a href="#"><i class="fa-solid fa-circle-minus" style="font-size: 1rem; color: red;"></i></a>
-                        </td>
+                        </td> -->
                     </tr>
-                    <tr>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                        <td class="icon-table">
-                            <a href="#"><i class="fa-solid fa-pen" style="font-size: 1rem; color: green; margin-right:10px;"></i></a>
-                            <a href="#"><i class="fa-solid fa-circle-minus" style="font-size: 1rem; color: red;"></i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                        <td class="icon-table">
-                            <a href="#"><i class="fa-solid fa-pen" style="font-size: 1rem; color: green; margin-right:10px;"></i></a>
-                            <a href="#"><i class="fa-solid fa-circle-minus" style="font-size: 1rem; color: red;"></i></a>
-                        </td>
-                    </tr>
+
+                <?php endforeach; ?>
                 </tbody>
             </table>
         </div>

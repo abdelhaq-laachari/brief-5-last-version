@@ -39,7 +39,7 @@
                 </div>
             </div>
 
-            <a href="http://localhost/youcode/4test/displayClient/LogOutAdmin" class="nav__link">
+            <a href="http://localhost/youcode/4test/signinClient/LogOutClient" class="nav__link">
                 <ion-icon name="log-out-outline" class="nav__icon"></ion-icon>
                 <span class="nav__name">Log Out</span>
             </a>
@@ -48,20 +48,7 @@
 
 
     <!-- include header -->
-    <div class="header">
-        <div class="title">
-            <h5>User Profile</h5>
-        </div>
-        <div class="profile">
-            <div class="pics">
-                <img src="http://localhost/youcode/4test/view/assets/img/12.jpg" alt="">
-            </div>
-            <div class="name" >
-               <span> William Hawkins </span>
-               <span class=" text-muted"> Client</span>
-            </div>
-        </div>
-    </div>
+    <?php include '../4test/view/inc/headerClient.php'   ?>
 
 
 

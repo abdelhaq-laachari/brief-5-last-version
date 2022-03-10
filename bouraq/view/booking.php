@@ -5,63 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
     <link rel="stylesheet" href="http://localhost/youcode/4test/view/assets/css/booking.css">
-    <title>Booking</title>
+    
+    
+    <!-- <link rel="stylesheet" href="http://localhost/youcode/4test/view/assets/css/home.css"> -->
+    <title>Bouraq</title>
 </head>
 <body>
-    
-    <div class="first">
-        <!-- include navbar -->
+
+    <!-- include navbar -->
     <?php include 'inc/header.php'   ?>
 
-        <!-- form -->
-
-        <div class="first-form">
-            <div class="form form-depart">
-                <select class="form-select" aria-label="Default select example">
-                    <option selected disabled>ville de depart</option>
+    <!-- first section -->
+    <div class="first-section">
+        <div class="first-image">
+            <img src="http://localhost/youcode/4test/view/assets/img/112.png" alt="">
+        </div>
+        <div class="first-title">
+            <span id="title">Book Your Trip Now</span>
+            <div class="first-form">
+                <label for="">Departure City</label>
+                <select class="  selectpicker" data-live-search="true" >
+                    <option selected disabled> .... </option>
                     <option value="safi">Safi</option>
-                    <option value="casablanca">Casablanca</option>
-                    <option value="tanger">Tanger</option>
-                    <option value="agadir">Agadir</option>
+                    <option value="casa">Casa</option>
+                    <option value="eljadida">eljadida</option>
                 </select>
-                <select class="form-select" aria-label="Default select example">
-                    <option selected disabled>ville d'arrivée</option>
+                <label for="">Arrival City </label>
+                <select class=" selectpicker" data-live-search="true" >
+                    <option selected disabled> .... </option>
                     <option value="safi">Safi</option>
-                    <option value="casablanca">Casablanca</option>
-                    <option value="tanger">Tanger</option>
-                    <option value="agadir">Agadir</option>
+                    <option value="casa">Casa</option>
+                    <option value="eljadida">eljadida</option>
                 </select>
+                <label for="">Date</label>
+                <input class="date-f" type="date" name="" id="">
             </div>
-            <div class="form form-date">
-                <form action="" class="date">
-                    <label for="">date de depart</label>
-                    <input type="date" name="" class="inp">
-                </form>
-                <form action="" class="date">
-                    <label for="">date d'arrivée</label>
-                    <input type="date" name="" class="inp">
-                </form>
-            </div>
-            <div class="form form-place">
-                <form action="" class="date">
-                    <label for="">Voyageurs</label>
-                    <input type="number" name="" class="inp" placeholder="1">
-                </form>
-                <div  class="date">
-                    <label for="">Mon confort</label>
-                    <select class="inp">
-                        <option value="first class"  > First Class </option>
-                        <option value="second class" > Second Class </option>
-                        <option value="economy class"> Economy Class </option>
-                    </select>
-                </div>
-            </div>
-            <div class="search d-grid gap-2 col-6 mx-auto">
-                <button class="btn btn-primary" type="button">Search</button>
-            </div>
+            <button type="button" class="btn btn-primary btn-block mt-4">Search</button>
         </div>
     </div>
+    
 
+
+
+
+    <!-- <script>
+        $(document).ready(function(){
+            $('.search_select_box select').selectpicker();
+        })
+    </script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
 </body>
 </html>

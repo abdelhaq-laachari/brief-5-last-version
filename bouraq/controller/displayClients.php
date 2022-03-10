@@ -7,12 +7,15 @@
 
 
 
-    class DisplayClient{
+    class DisplayClients{
 
         public function index()
         {
             if(!empty($_SESSION['idAdmin']))
                 {    
+                    $gets = new DisplayClient();
+                    $getClients = $gets->clients();
+
                     require_once __DIR__."/../view/admin/display_client.php";
                 }
                 else{
@@ -21,7 +24,7 @@
                 }
                 
             
-            }
+        }
         
         
         

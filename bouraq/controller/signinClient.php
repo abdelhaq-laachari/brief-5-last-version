@@ -9,7 +9,8 @@ class SignInClient
 {
     public function index()
     {
-    require_once __DIR__."/../view/client/signIn.php";
+        $error = "";
+        require_once __DIR__."/../view/client/signIn.php";
     }
 
 
@@ -17,17 +18,24 @@ class SignInClient
     {
         $email = $_POST['email'];
         $password = $_POST['password'];
+        $second = $_POST['second'];
+        $phone = $_POST['phone'];
         $logC = new SignIn();
-        $var=$logC->signinClient($email,$password);
+        $var=$logC->signinClient($email,$password,$second,$phone);
         if($var)
         {   
             $_SESSION['idClient'] =$var['idClient'];
             $_SESSION['name'] =$var['name'];
+            $_SESSION['second'] =$var['second'];
+            $_SESSION['phone'] =$var['phone'];
             $_SESSION['email'] = $email;
             $_SESSION['password'] = $password;
-            require_once __DIR__."/../view/client/profile.php";
+
+            // require_once __DIR__."/../view/client/profile.php";
+            header("Location:http://localhost/youcode/4test/profile");
         }
         else{
+            $error = "Password or email is incorrect";
             require_once __DIR__."/../view/client/signIn.php";
         }
     }
@@ -40,7 +48,6 @@ class SignInClient
         unset($_SESSION['email']);
         unset($_SESSION['password']);
         session_destroy();
-        // print_r($_SESSION);
 
         require_once __DIR__."/../view/index.php";
     }

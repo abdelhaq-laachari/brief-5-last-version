@@ -56,49 +56,29 @@
 
     <!-- form -->
 
-    <div class="first-form">
-            <div class="form form-depart">
-                <select class="form-select" aria-label="Default select example">
-                    <option selected disabled>ville de depart</option>
-                    <option value="safi">Safi</option>
-                    <option value="casablanca">Casablanca</option>
-                    <option value="tanger">Tanger</option>
-                    <option value="agadir">Agadir</option>
-                </select>
-                <select class="form-select" aria-label="Default select example">
-                    <option selected disabled>ville d'arrivée</option>
-                    <option value="safi">Safi</option>
-                    <option value="casablanca">Casablanca</option>
-                    <option value="tanger">Tanger</option>
-                    <option value="agadir">Agadir</option>
-                </select>
-            </div>
-            <div class="form form-date">
-                <form action="" class="date">
-                    <label for="">date de depart</label>
-                    <input type="date" name="" class="inp">
-                </form>
-                <form action="" class="date">
-                    <label for="">date d'arrivée</label>
-                    <input type="date" name="" class="inp">
-                </form>
-            </div>
-            <div class="form form-place">
-                <form action="" class="date">
-                    <label for="">Nombre De places</label>
-                    <input type="number" name="" class="inp" placeholder="1">
-                </form>
-                <div  class="date">
-                    <label for="">Mon confort</label>
-                    <select class="inp">
-                        <option value="first class"  > First Class </option>
-                        <option value="second class" > Second Class </option>
-                        <option value="economy class"> Economy Class </option>
-                    </select>
+        <div class="first-form">
+            <form action="">
+                <div class="form form-depart">
+                    <input type="text" name="ville de_depart"  placeholder="Enter Departure city" required />
+                    <input type="text" name="ville darrivée"  placeholder="Enter Arrival City" required />
                 </div>
-            </div>
+                <div class="form form-date">
+                    <input type="text" name="date de depart"  placeholder="Enter Date of departure" required />
+                    <input type="text" name="date darrivée"  placeholder="Enter Arrival date" required />
+                </div>
+                <div class="form form-place">
+                    <input type="number" name="nombre de place"  placeholder="Number of place" required />
+                </div>
+            </form>
+                <label for="">Mon confort</label>
+                <select class="inp">
+                    <option value="first class"  > First Class </option>
+                    <option value="second class" > Second Class </option>
+                    <option value="economy class"> Economy Class </option>
+                </select>
             <div class="search d-grid gap-2 col-6 mx-auto">
                 <button class="btn btn-primary" type="button">Add</button>
+            </div>
             </div>
         </div>
 

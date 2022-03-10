@@ -26,12 +26,12 @@
                         <i class="fa-solid fa-house" style="font-size: 1.3rem;"></i>
                         <span class="nav__name">Dashboard</span>
                     </a>
-                    <a href="http://localhost/youcode/4test/trip" class="nav__link">
+                    <!-- <a href="http://localhost/youcode/4test/trip" class="nav__link">
                         <i class="fa-solid fa-plus" style="font-size: 1.5rem;"></i>
                         <span class="nav__name">Add Trip</span>
-                    </a>
+                    </a> -->
 
-                    <a href="http://localhost/youcode/4test/displayclient" class="nav__link">
+                    <a href="http://localhost/youcode/4test/displayclients" class="nav__link">
                         <i class="fa-solid fa-users" style="font-size: 1.3rem;"></i>
                         <span class="nav__name">Client</span>
                     </a>
@@ -49,7 +49,7 @@
     <!-- include header -->
     <?php include '../4test/view/inc/adminHeader.php'   ?>
 
-
+       
 
     <!-- section -->
 
@@ -90,7 +90,6 @@
     <div class="second">
         <div class="second-title">
             <h5>All Trip</h5>
-           
             <a href="#">
                 <button type="button" class="btn btn-outline-primary">Add Trip</button>
             </a>
@@ -103,48 +102,25 @@
                         <th scope="col">Arrival city</th>
                         <th scope="col">Date of departure</th>
                         <th scope="col">arrival date</th>
-                        <th scope="col">Total Of Booking</th>
                         <th scope="col">Price</th>
                         <th scope="col">Action</th>
                     </tr>
                 </thead>
                 <tbody>
+               <?php foreach($getTrips as $trip) : ?>
                     <tr>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
+                        <td><?=$trip['ville_de_depart'] ?></td>
+                        <td><?=$trip['ville_darrivée'] ?></td>
+                        <td><?=$trip['date_de_depart'] ?></td>
+                        <td><?=$trip['date_darrivée'] ?></td>
+                        <td><?=$trip['prix'] ?></td>
                         <td class="icon-table">
                             <a href="#"><i class="fa-solid fa-pen" style="font-size: 1rem; color: green;"></i></a>
                             <a href="#"><i class="fa-solid fa-circle-minus" style="font-size: 1rem; color: red;"></i></a>
                         </td>
                     </tr>
-                    <tr>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                        <td>@fat</td>
-                        <td>@fat</td>
-                        <td>@fat</td>
-                        <td class="icon-table">
-                            <a href="#"><i class="fa-solid fa-pen" style="font-size: 1rem; color: green;"></i></a>
-                            <a href="#"><i class="fa-solid fa-circle-minus" style="font-size: 1rem; color: red;"></i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                        <td>@twitter</td>
-                        <td>@twitter</td>
-                        <td>@twitter</td>
-                        <td class="icon-table">
-                            <a href="#"><i class="fa-solid fa-pen" style="font-size: 1rem; color: green;"></i></a>
-                            <a href="#"><i class="fa-solid fa-circle-minus" style="font-size: 1rem; color: red;"></i></a>
-                        </td>
-                    </tr>
+                   
+                  <?php endforeach; ?>
                 </tbody>
             </table>
         </div>

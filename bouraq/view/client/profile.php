@@ -48,20 +48,7 @@
 
 
     <!-- include header -->
-    <div class="header">
-        <div class="title">
-            <h5>User Profile</h5>
-        </div>
-        <div class="profile">
-            <div class="pics">
-                <img src="http://localhost/youcode/4test/view/assets/img/12.jpg" alt="">
-            </div>
-            <div class="name" >
-               <span> William Hawkins </span>
-               <span class=" text-muted"> Client</span>
-            </div>
-        </div>
-    </div>
+    <?php include '../4test/view/inc/headerClient.php'   ?>
 
 
 
@@ -74,26 +61,26 @@
                 <img src="http://localhost/youcode/4test/view/assets/img/12.jpg" alt="">
             </div>
             <div class="title-bottom">
-                <h4 >William Hawkins</h4>
+                <h4 ><?=$_SESSION["name"]  ?></h4>
                 <a href="#"><i class="fa-solid fa-pen" style="font-size: 1rem; color: #000;"></i></a>
             </div>
         </div>
         <div class="right">
             <div class="card-c first-name">
                 <h5>First Name</h5>
-                <span>William</span>
+                <span> <?=$_SESSION["name"]  ?></span>
             </div>
             <div class="card-c last-name">
                 <h5>Last Name</h5>
-                <span>Hawkins</span>
+                <span> <?=$_SESSION["second"]  ?></span>
             </div>
             <div class="card-c phone">
                 <h5>Phone Number</h5>
-                <span>0612345678</span>
+                <span> <?=$_SESSION["phone"]  ?></span>
             </div>
             <div class="card-c email">
                 <h5>Email Adress</h5>
-                <span>William@email.com</span>
+                <span> <?=$_SESSION["email"]  ?></span>
             </div>
         </div>
     </div>

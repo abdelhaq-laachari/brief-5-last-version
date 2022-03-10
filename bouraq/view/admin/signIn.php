@@ -31,6 +31,9 @@
 
 
     <section >
+        <div class="alert alert-primary text-center" role="alert">
+          <h5>Admin Sign In</h5>
+        </div>
         <div class="container-fluid h-custom">
           <div class="row d-flex justify-content-center align-items-center h-100">
             <div class="col-md-9 col-lg-6 col-xl-5">
@@ -50,7 +53,7 @@
                 <div class="form-outline mb-3">
                   <input type="password" name="password" class="form-control form-control-lg" placeholder="Enter password" required />
                 </div>
-                
+                <span style="color: red; padding-left:10px;"><?=$error?></span>
       
                 <div class="text-center text-lg-start mt-4 pt-2">
                     <button class="btn btn-primary btn-lg" type="submit" name="submit">Sign In</button>

@@ -17,6 +17,7 @@ class Trip{
             require_once __DIR__."/../view/admin/signIn.php";
         }
     }
+    
 
     
     public function LogOutAdmin()
@@ -31,6 +32,9 @@ class Trip{
     }
 
 
+
+
+    
     
     
 }
