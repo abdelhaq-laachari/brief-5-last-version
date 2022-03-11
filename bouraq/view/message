@@ -69,3 +69,27 @@
 
 </body>
 </html>
+
+
+
+
+
+            <!-- <div class="first-form">
+                <label for="">Departure City</label>
+                <select class="  selectpicker" data-live-search="true" >
+                    <option selected disabled> .... </option>
+                    <?php foreach($getTrips as $trip) : ?>
+                    <option value="<?=$trip['ville_darrivée'] ?>"><?=$trip['ville_de_depart'] ?></option>
+                    <?php endforeach; ?>
+                </select>
+                <label for="">Arrival City </label>
+                <select class=" selectpicker" data-live-search="true" >
+                    <option selected disabled> .... </option>
+                    <?php foreach($getTrips as $trip) : ?>
+                    <option value="<?=$trip['ville_darrivée'] ?>"><?=$trip['ville_darrivée'] ?></option>
+                    <?php endforeach; ?>
+                </select>
+                <label for="">Date</label>
+                <input class="date-f" type="date" name="" id="">
+            </div> -->
+            <!-- <button type="submit" name="submit" class="btn btn-primary btn-block mt-4">Search</button> -->

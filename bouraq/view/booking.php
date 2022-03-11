@@ -25,37 +25,35 @@
         </div>
         <div class="first-title">
             <span id="title">Book Your Trip Now</span>
-            <div class="first-form">
-                <label for="">Departure City</label>
-                <select class="  selectpicker" data-live-search="true" >
-                    <option selected disabled> .... </option>
-                    <option value="safi">Safi</option>
-                    <option value="casa">Casa</option>
-                    <option value="eljadida">eljadida</option>
-                </select>
-                <label for="">Arrival City </label>
-                <select class=" selectpicker" data-live-search="true" >
-                    <option selected disabled> .... </option>
-                    <option value="safi">Safi</option>
-                    <option value="casa">Casa</option>
-                    <option value="eljadida">eljadida</option>
-                </select>
-                <label for="">Date</label>
-                <input class="date-f" type="date" name="" id="">
-            </div>
-            <button type="button" class="btn btn-primary btn-block mt-4">Search</button>
+            <form class="first-form" action="http://localhost/youcode/4test/booking/search" method="POST">
+                <div class="mb-3">
+                    <label class="form-label">Depart</label>
+                    <input type="text" name="depart" class="form-control" >
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Arrive</label>
+                    <input type="text" name="arrive" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Date de depart</label>
+                    <input type="date" name="day" class="form-control">
+                </div>
+                <button type="submit" name="submit" class="btn btn-primary btn-block mt-4">Search</button>
+            </form>
         </div>
     </div>
+
+
+    
     
 
 
 
 
-    <!-- <script>
-        $(document).ready(function(){
-            $('.search_select_box select').selectpicker();
-        })
-    </script> -->
+
+
+
+    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" ></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" ></script>
@@ -63,3 +61,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
 </body>
 </html>
+
+
+
+
+

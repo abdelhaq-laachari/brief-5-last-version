@@ -61,22 +61,11 @@ body{
     /* align-items: center; */
 }
 
-
-.bootstrap-select {
-    width: 100% !important;
+.form-label{
+    padding-left: 1rem;
 }
 
-.btn-light{
-    background-color: #fff !important;
-    border: 1.5px solid #000;
-}
 
-.date-f{
-    width: 100%;
-    height: 50px;
-    border-radius: 5px;
-    padding: 1rem;
-}
 
 
 @media (max-width: 770px){

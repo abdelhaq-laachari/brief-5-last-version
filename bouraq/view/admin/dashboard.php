@@ -26,10 +26,6 @@
                         <i class="fa-solid fa-house" style="font-size: 1.3rem;"></i>
                         <span class="nav__name">Dashboard</span>
                     </a>
-                    <!-- <a href="http://localhost/youcode/4test/trip" class="nav__link">
-                        <i class="fa-solid fa-plus" style="font-size: 1.5rem;"></i>
-                        <span class="nav__name">Add Trip</span>
-                    </a> -->
 
                     <a href="http://localhost/youcode/4test/displayclients" class="nav__link">
                         <i class="fa-solid fa-users" style="font-size: 1.3rem;"></i>

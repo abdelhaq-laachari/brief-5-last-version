@@ -13,7 +13,7 @@ class DisplayClient extends Connection
             $log = $this->conn()->prepare($query);
             $log->execute();
             $res = $log->fetchAll(PDO::FETCH_ASSOC);
-            return $res;
+            return $res; 
        
     }
 

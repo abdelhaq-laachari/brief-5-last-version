@@ -17,11 +17,14 @@ class SignInAdmin{
         $email="";
         $password="";
         if(isset( $_POST['email']) && isset( $_POST['password']))
-        {$email = $_POST['email'];
-        $password = $_POST['password'];}
+        {
+            $email = $_POST['email'];
+            $password = $_POST['password'];
+        
+        }
 
-        $log = new login();
-        $var=$log->signin($email,$password);
+            $log = new login();
+            $var=$log->signin($email,$password);
         if($var)
         {   
             $_SESSION['idAdmin'] = $var['idAdmin'];
