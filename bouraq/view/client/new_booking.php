@@ -56,50 +56,25 @@
 
     <!-- first -->
     <div class="first-form">
-            <div class="form form-depart">
-                <select class="form-select" aria-label="Default select example">
-                    <option selected disabled>ville de depart</option>
-                    <option value="safi">Safi</option>
-                    <option value="casablanca">Casablanca</option>
-                    <option value="tanger">Tanger</option>
-                    <option value="agadir">Agadir</option>
-                </select>
-                <select class="form-select" aria-label="Default select example">
-                    <option selected disabled>ville d'arrivée</option>
-                    <option value="safi">Safi</option>
-                    <option value="casablanca">Casablanca</option>
-                    <option value="tanger">Tanger</option>
-                    <option value="agadir">Agadir</option>
-                </select>
-            </div>
-            <div class="form form-date">
-                <form action="" class="date">
-                    <label for="">date de depart</label>
-                    <input type="date" name="" class="inp">
-                </form>
-                <form action="" class="date">
-                    <label for="">date d'arrivée</label>
-                    <input type="date" name="" class="inp">
-                </form>
-            </div>
-            <div class="form form-place">
-                <form action="" class="date">
-                    <label for="">Voyageurs</label>
-                    <input type="number" name="" class="inp" placeholder="1">
-                </form>
-                <div  class="date">
-                    <label for="">Mon confort</label>
-                    <select class="inp">
-                        <option value="first class"  > First Class </option>
-                        <option value="second class" > Second Class </option>
-                        <option value="economy class"> Economy Class </option>
-                    </select>
+        <div class="first-title">
+            <!-- <span id="title">Book Your Trip Now</span> -->
+            <form class="first" action="http://localhost/youcode/4test/newBooking/searchClient" method="POST">
+                <div class="mb-3">
+                    <label class="form-label">Depart</label>
+                    <input type="text" name="depart" class="form-control" required >
                 </div>
-            </div>
-            <div class="search d-grid gap-2 col-6 mx-auto">
-                <button class="btn btn-primary" type="button">Search</button>
-            </div>
+                <div class="mb-3">
+                    <label class="form-label">Arrive</label>
+                    <input type="text" name="arrive" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Date de depart</label>
+                    <input type="date" name="day" class="form-control" required>
+                </div>
+                <button type="submit" name="submit" class="btn btn-primary btn-block mt-4">Search</button>
+            </form>
         </div>
+    </div>
 
     
 

@@ -14,7 +14,7 @@
     <title>Bouraq</title>
 </head>
 <body>
-
+ 
     <!-- include navbar -->
     <?php include 'inc/header.php'   ?>
 

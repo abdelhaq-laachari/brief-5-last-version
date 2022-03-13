@@ -8,19 +8,9 @@
     <!-- <link rel="stylesheet" href="http://localhost/youcode/4test/view/assets/css/home.css"> -->
     <title>Sign In</title>
 
-  <style>
-
-      :root{
-          --bg-color:#F5F7FC;
-      }
-
-      body{
-          background-color: var(--bg-color)  ;
-      }
-  </style>
 
 </head>
-<body>
+<body style="background-color: #F5F7FC;" >
 
     <!-- include navbar -->
     <?php include '../4test/view/inc/header.php'   ?>

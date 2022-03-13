@@ -18,10 +18,28 @@ require_once __DIR__."/../model/booking.php";
 
                     $logC = new Search();
                     $sth=$logC->reserv($depart,$arrive,$day);
-                    // require_once __DIR__."/../view/booking.php";
-                    require_once __DIR__."/../view/search.php";
+                    if($sth)
+                    {
+                        require_once __DIR__."/../view/search.php";
+                    }
+                    else
+                    {
+                        require_once __DIR__."/../view/booking.php";
+                        echo"<script language=\"javascript\">";
+                        echo"alert('No Results Found')";
+                        echo"</script>";
+                    }
                    
                 }
+            }
+
+            public function info()
+            {
+
+                require_once __DIR__."/../view/info.php";
+                
+                
+
             }
 
             

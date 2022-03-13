@@ -11,6 +11,8 @@
 
         public function index()
         {
+            $error = "";
+            
             if(!empty($_SESSION['idAdmin']))
                 {    
                     $gets = new DisplayClient();

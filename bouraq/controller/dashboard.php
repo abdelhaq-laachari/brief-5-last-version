@@ -6,6 +6,8 @@ session_start();
 
             public function index()
             {
+                $error = "";
+                
                 if(isset($_SESSION['idAdmin']))
                 {
                     $gets = new Display();

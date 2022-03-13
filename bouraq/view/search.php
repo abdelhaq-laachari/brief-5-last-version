@@ -17,13 +17,10 @@
 
 	<div>
 
-		<div class="title">
-			<div>
-				<span><?php echo $sth['ville_de_depart']; ?></span>
-				<i class="fa-solid fa-chevron-right"></i>
-				<span><?php echo $sth['ville_darrivée'];?></span>
-			</div>
-			<div class="span">Second Class</div>
+		<div class="title">	
+			<span><?php echo $sth['ville_de_depart']; ?></span>
+			<i class="fa-solid fa-chevron-right" style="color: red;"></i>
+			<span><?php echo $sth['ville_darrivée'];?></span>
 		</div>
 
 		<div class="table-responsive col-lg-10 m-auto border mt-5">
@@ -36,7 +33,7 @@
 						<th scope="col">Arrival Date</th>
 						<th scope="col">Price</th>
 						<th scope="col">Book</th>
-						<th scope="col">Cancel</th>
+						<!-- <th scope="col">Cancel</th> -->
 					</tr>
 				</thead>
 				<tbody>
@@ -47,8 +44,12 @@
 						<td><?php echo $sth['date_de_depart']; ?></td>
 						<td><?php echo $sth['date_darrivée'];?></td>
 						<td><?php echo $sth['prix'];?></td>
-						<td><a href=""><button type="button" class="btn btn-primary">Book</button></a></td>
-						<td><a href=""><button type="button" class="btn btn-danger">Cancel</button></a></td>
+						<td>
+							<form action="http://localhost/youcode/4test/booking/info?id=<?php echo $sth['idTrip']?>" method="POST"> 
+								<button type="submit" name="submit" class="btn btn-primary">Book</button> 
+							</form> 
+						</td>
+						<!-- <td><a href="http://localhost/youcode/4test/booking/info"><button type="button" class="btn btn-danger">Cancel</button></a></td> -->
 					</tr>
 				</tbody>
 			</table>

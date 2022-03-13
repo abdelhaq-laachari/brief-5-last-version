@@ -3,6 +3,7 @@
 require_once __DIR__."/../model/client/SignUp.php";
 
 class SignUp{
+    
     public function index()
     {
         $error = "";

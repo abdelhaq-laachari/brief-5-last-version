@@ -15,7 +15,7 @@ body{
     width: 98%;
     height: 80vh;
     margin: auto;
-    background-color: #42C2FF;
+    background-color: #cae8f7;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -24,39 +24,11 @@ body{
     box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.1);
 }
 
-.form{
-    display: flex;
-    width: 100%;
-    height: 50px;
-    justify-content: space-around;
-
-}
-.form-select{
-    width: 46%;
-}
-
-.form-date{
-    width: 100%;
-    height: 100px;
-}
-
-.date{
+.first{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    width: 45%;
-    height: 80px;
 }
 
-.inp , .inp2{
-    border-radius: 5px;
-    height: 50px;
-    padding: 10px;
-}
-
-label{
-    color: #fff;
-}
 
 
 @media (max-width: 770px){
@@ -68,29 +40,5 @@ label{
         justify-content: flex-start;
     }
     
-    .form{
-        height: 160px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-    .form-date{
-        width: 100%;
-        height: 210px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-    .form-select{
-        width: 100%;
-        height: 50px;
-        margin: auto;
-    }
-    .date{
-        width: 100%;
-    }
-    .search{
-        padding-top: 20px;
-    }
     
 }
