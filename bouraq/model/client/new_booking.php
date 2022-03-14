@@ -24,18 +24,18 @@ class Search extends Connection
        
     }
 
-    static public function gettrip($data){
-		$idTrip = $data['idTrip'];
-		try{
-			$query = 'SELECT * FROM `trip` WHERE idTrip=:idTrip';
-			$stmt = Connection::conn()->prepare($query);
-			$stmt->execute(array(":idTrip" => $idTrip));
-			$post = $stmt->fetch(PDO::FETCH_OBJ);
-			return $post;
-		}catch(PDOException $ex){
-			echo 'erreur' . $ex->getMessage();
-		}
-	}
+    // static public function gettrip($data){
+	// 	$idTrip = $data['idTrip'];
+	// 	try{
+	// 		$query = 'SELECT * FROM `trip` WHERE idTrip=:idTrip';
+	// 		$stmt = Connection::conn()->prepare($query);
+	// 		$stmt->execute(array(":idTrip" => $idTrip));
+	// 		$post = $stmt->fetch(PDO::FETCH_OBJ);
+	// 		return $post;
+	// 	}catch(PDOException $ex){
+	// 		echo 'erreur' . $ex->getMessage();
+	// 	}
+	// }
 
     
     

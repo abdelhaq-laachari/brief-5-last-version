@@ -33,8 +33,9 @@ session_start();
                     // $sth=$logC->reserv($depart,$arrive,$day);
 
                     $gets = new Search();
-                    $getClients = $gets->reserv($depart,$arrive,$day);
-                    if($getClients)
+                    $getTrips = $gets->reserv($depart,$arrive,$day);
+                    
+                    if($getTrips)
                     {
                         require_once __DIR__."/../view/client/searchClient.php";
                     }
@@ -51,16 +52,16 @@ session_start();
             }
 
 
-            public function getOnetrip(){
+            // public function getOnetrip(){
 
-                if(isset($_POST['idTrip'])){
-                    $data = array(
-                        'idTrip' => $_POST['idTrip']
-                    );
-                    $trip = Search::gettrip($data);
-                    return $trip;
-                }
-            }
+            //     if(isset($_POST['idTrip'])){
+            //         $data = array(
+            //             'idTrip' => $_POST['idTrip']
+            //         );
+            //         $trip = Search::gettrip($data);
+            //         return $trip;
+            //     }
+            // }
             
             
         }

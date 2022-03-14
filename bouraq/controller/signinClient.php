@@ -18,10 +18,10 @@ class SignInClient
     {
         $email = $_POST['email'];
         $password = $_POST['password'];
-        $second = $_POST['second'];
-        $phone = $_POST['phone'];
+        // $second = $_POST['second'];
+        // $phone = $_POST['phone'];
         $logC = new SignIn();
-        $var=$logC->signinClient($email,$password,$second,$phone);
+        $var=$logC->signinClient($email,$password);
         if($var)
         {   
             $_SESSION['idClient'] =$var['idClient'];

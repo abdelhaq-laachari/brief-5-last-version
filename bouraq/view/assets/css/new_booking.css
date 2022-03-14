@@ -31,7 +31,7 @@ body{
 
 
 
-@media (max-width: 770px){
+@media screen and (max-width: 770px){
 
     .first-form{
         padding: 1rem;

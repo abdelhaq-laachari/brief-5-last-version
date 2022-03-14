@@ -12,19 +12,22 @@ require_once __DIR__."/../model/booking.php";
             public function search()
             {
                 if (isset($_POST["submit"])) {
+
                     $depart = $_POST["depart"];
                     $arrive = $_POST["arrive"];
                     $day = $_POST["day"];
 
-                    $logC = new Search();
-                    $sth=$logC->reserv($depart,$arrive,$day);
-                    if($sth)
+                    $gets = new Search();
+                    $getTrips = $gets->reserv($depart,$arrive,$day);
+                    
+                    if($getTrips)
                     {
                         require_once __DIR__."/../view/search.php";
                     }
                     else
                     {
                         require_once __DIR__."/../view/booking.php";
+
                         echo"<script language=\"javascript\">";
                         echo"alert('No Results Found')";
                         echo"</script>";
@@ -32,6 +35,8 @@ require_once __DIR__."/../model/booking.php";
                    
                 }
             }
+
+
 
             public function info()
             {
