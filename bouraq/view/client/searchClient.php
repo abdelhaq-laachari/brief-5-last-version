@@ -35,7 +35,7 @@
                         <span class="nav__name">New Booking</span>
                     </a>
 
-                    <a href="#" class="nav__link">
+                    <a href="http://localhost/youcode/4test/mytrips" class="nav__link">
                         <i class="fa-solid fa-suitcase-rolling" style="font-size: 1.5rem;"></i>
                         <span class="nav__name">My Trip</span>
                     </a>
@@ -67,6 +67,7 @@
 						<th scope="col">Date of Departure</th>
 						<th scope="col">Arrival Date</th>
 						<th scope="col">Price</th>
+						<th scope="col">Departure Day</th>
 						<th scope="col">Book</th>
 						<!-- <th scope="col">Cancel</th> -->
 					</tr>
@@ -79,8 +80,9 @@
 						<td><?php echo $trips['date_de_depart']; ?></td>
 						<td><?php echo $trips['date_darrivée'];?></td>
 						<td><?php echo $trips['prix'];?></td>
+						<td><?php echo $trips['jour_de_depart'];?></td>
 						<td>
-                            <button type="submit" name="submit" class="btn btn-primary editbtn" >Book</button> 
+                            <button type="submit" name="book" class="btn btn-primary editbtn" >Book</button> 
                             <!-- <button type="submit" name="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Book</button>  -->
 							
 						</td>
@@ -164,7 +166,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
-                <form action="#" method="POST">
+                <form action="http://localhost/youcode/4test/newbooking/insert" method="POST">
 
                     <div class="modal-body">
 
@@ -172,53 +174,58 @@
 
                         <div class="form-group">
                             <label> Departure City </label>
-                            <input type="text" name="Departure_City" id="Departure_City" class="form-control" disabled >
+                            <input type="text" name="Departure_City" id="Departure_City" class="form-control" readonly >
                         </div>
 
                         <div class="form-group">
                             <label> Arrivale City </label>
-                            <input type="text" name="Arrivale_City" id="Arrivale_City" class="form-control" disabled >
+                            <input type="text" name="Arrivale_City" id="Arrivale_City" class="form-control" readonly >
                         </div>
 
                         <div class="form-group">
                             <label> Date of Departure </label>
-                            <input type="text" name="Date_of_Departure" id="Date_of_Departure" class="form-control" disabled >
+                            <input type="text" name="Date_of_Departure" id="Date_of_Departure" class="form-control" readonly >
                         </div>
 
                         <div class="form-group">
                             <label> Arrival Date </label>
-                            <input type="text" name="Arrival_Date" id="Arrival_Date" class="form-control" disabled >
+                            <input type="text" name="Arrival_Date" id="Arrival_Date" class="form-control" readonly >
+                        </div>
+                        <div class="form-group">
+                            <label> Departure Day </label>
+                            <input type="text" name="jour_de_depart" id="jour_de_depart" class="form-control" readonly >
                         </div>
                         <div class="form-group">
                             <label> Price </label>
-                            <input type="text" name="Price" id="Price" class="form-control" disabled>
+                            <input type="text" name="Price" id="Price" class="form-control" readonly>
                         </div>
                         <div class="form-group">
                             <label> First Name </label>
-                            <input type="text" name="First Name" class="form-control" value="<?=$_SESSION["name"]?>"  disabled>
+                            <input type="text" name="First Name" class="form-control" value="<?=$_SESSION["name"]?>"  readonly>
                         </div>
                         <div class="form-group">
                             <label> Last Name </label>
-                            <input type="text" name="First Name" class="form-control" value="<?=$_SESSION["second"]?>"  disabled>
+                            <input type="text" name="First Name" class="form-control" value="<?=$_SESSION["second"]?>"  readonly>
                         </div>
                         <div class="form-group">
                             <label> Phone Number </label>
-                            <input type="text" name="First Name" class="form-control" value="<?=$_SESSION["phone"]?>"  disabled>
+                            <input type="text" name="First Name" class="form-control" value="<?=$_SESSION["phone"]?>"  readonly>
                         </div>
                         <div class="form-group">
                             <label> Email Address </label>
-                            <input type="text" name="First Name" class="form-control" value="<?=$_SESSION["email"]?>"  disabled>
+                            <input type="text" name="First Name" class="form-control" value="<?=$_SESSION["email"]?>"  readonly>
                         </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
-                        <button type="submit" name="updatedata" class="btn btn-primary">Confirm</button>
+                        <button type="submit" name="insert" class="btn btn-primary">Confirm</button>
                     </div>
                 </form>
 
             </div>
         </div>
     </div>
+
 
 
 

@@ -17,6 +17,18 @@ class Display extends Connection
        
     }
 
+
+    public function CancelTrip($id)
+    {
+        $query = "UPDATE trip SET availability = 0 WHERE idTrip = $id ";
+        $log = $this->conn()->prepare($query);
+        $log->execute();
+    }
 }
 
+
+
+
 ?>
+
+

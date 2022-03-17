@@ -36,7 +36,7 @@
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Date de depart</label>
-                    <input type="date" name="day" class="form-control">
+                    <input type="date" name="day" class="form-control" id="PasteDate">
                 </div>
                 <button type="submit" name="submit" class="btn btn-primary btn-block mt-4">Search</button>
             </form>
@@ -59,6 +59,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" ></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+    
+    <!-- include js fille for priveuse date -->
+    <script src="http://localhost/youcode/4test/view/assets/js/date.js"></script>
+
 </body>
 </html>
 

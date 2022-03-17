@@ -21,9 +21,9 @@ class Register extends Connection
 
            if($this->check($email)==null)
            {
-            $query = "INSERT INTO client (name, second, phone, email, password) VALUES ('$name', '$second', '$phone', '$email', '$password')";
-            $log = $this->conn()->prepare($query);
-            $log->execute();
+                $query = "INSERT INTO client (name, second, phone, email, password) VALUES ('$name', '$second', '$phone', '$email', '$password')";
+                $log = $this->conn()->prepare($query);
+                $log->execute();
            }
           else{
               return true;

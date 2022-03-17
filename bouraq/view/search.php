@@ -65,7 +65,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
-                <form action="#" method="POST">
+                <form action="http://localhost/youcode/4test/booking/ticket" method="POST">
 
                     <div class="modal-body">
 
@@ -73,38 +73,38 @@
 
                         <div class="form-group">
                             <label> Departure City </label>
-                            <input type="text" name="Departure_City" id="Departure_City" class="form-control" disabled >
+                            <input type="text" name="Departure_City" id="Departure_City" class="form-control" readonly >
                         </div>
 
                         <div class="form-group">
                             <label> Arrivale City </label>
-                            <input type="text" name="Arrivale_City" id="Arrivale_City" class="form-control" disabled >
+                            <input type="text" name="Arrivale_City" id="Arrivale_City" class="form-control" readonly >
                         </div>
 
                         <div class="form-group">
                             <label> Date of Departure </label>
-                            <input type="text" name="Date_of_Departure" id="Date_of_Departure" class="form-control" disabled >
+                            <input type="text" name="Date_of_Departure" id="Date_of_Departure" class="form-control" readonly >
                         </div>
 
                         <div class="form-group">
                             <label> Arrival Date </label>
-                            <input type="text" name="Arrival_Date" id="Arrival_Date" class="form-control" disabled >
+                            <input type="text" name="Arrival_Date" id="Arrival_Date" class="form-control" readonly >
                         </div>
                         <div class="form-group">
                             <label> Price </label>
-                            <input type="text" name="Price" id="Price" class="form-control" disabled>
+                            <input type="text" name="Price" id="Price" class="form-control" readonly>
                         </div>
                         <div class="form-group">
                             <label> First Name </label>
-                            <input type="text" name="First Name" class="form-control"  >
+                            <input type="text" name="Fname" class="form-control"  >
                         </div>
                         <div class="form-group">
                             <label> Last Name </label>
-                            <input type="text" name="Last Name" class="form-control"  >
+                            <input type="text" name="Lname" class="form-control"  >
                         </div>
                         <div class="form-group">
                             <label> Phone Number </label>
-                            <input type="text" name="Phone Number" class="form-control"  >
+                            <input type="text" name="phone" class="form-control"  >
                         </div>
                         <div class="form-group">
                             <label> Email Address </label>
@@ -113,7 +113,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
-                        <button type="submit" name="updatedata" class="btn btn-primary">Confirm</button>
+                        <button type="submit" name="book" class="btn btn-primary">Confirm</button>
                     </div>
                 </form>
 

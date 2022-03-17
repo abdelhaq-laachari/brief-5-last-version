@@ -7,35 +7,34 @@ class Search extends Connection
 {
 
  
-    public function reserv($depart,$arrive,$day)
+    public function reserv($depart,$arrive,$day,$status)
     {
-        
-        // $sth = $this->conn()->prepare("SELECT * FROM `trip` WHERE ville_de_depart = '$depart' AND ville_darrivée = '$arrive' AND jour_de_depart = '$day'");
-        // $sth->setFetchMode(PDO:: FETCH_ASSOC);
-        // $sth -> execute();
-        // $res=$sth->fetch();
-        // return $res;
 
-        $query = "SELECT * FROM `trip` WHERE ville_de_depart = '$depart' AND ville_darrivée = '$arrive' AND jour_de_depart = '$day'";
+        $query = "SELECT * FROM `trip` WHERE ville_de_depart = '$depart' AND ville_darrivée = '$arrive' AND jour_de_depart = '$day' AND availability = '$status' ";
         $log = $this->conn()->prepare($query);
         $log->execute();
         $res = $log->fetchAll(PDO::FETCH_ASSOC);
         return $res; 
        
     }
+ 
+    public function insert($depart,$arrive,$dateD,$dateA,$prix,$Ddepart)
+    {
+        
+        $query = "INSERT INTO reservation (ville_de_depart, ville_darrivée, date_de_depart, date_darrivée, prix, jour_de_depart) VALUES ('$depart', '$arrive', '$dateD', '$dateA', '$prix', '$Ddepart')";
+        $new = $this->conn()->prepare($query);
+        $new->execute();
+        
+    }
 
-    // static public function gettrip($data){
-	// 	$idTrip = $data['idTrip'];
-	// 	try{
-	// 		$query = 'SELECT * FROM `trip` WHERE idTrip=:idTrip';
-	// 		$stmt = Connection::conn()->prepare($query);
-	// 		$stmt->execute(array(":idTrip" => $idTrip));
-	// 		$post = $stmt->fetch(PDO::FETCH_OBJ);
-	// 		return $post;
-	// 	}catch(PDOException $ex){
-	// 		echo 'erreur' . $ex->getMessage();
-	// 	}
-	// }
+    public function myTrips()
+    {
+        $query = "SELECT * FROM `reservation`";
+        $log = $this->conn()->prepare($query);
+        $log->execute();
+        $res = $log->fetchAll(PDO::FETCH_ASSOC);
+        return $res;
+    }
 
     
     

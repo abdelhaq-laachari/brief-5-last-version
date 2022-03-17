@@ -11,8 +11,25 @@
     <link rel="stylesheet" href="http://localhost/youcode/4test/view/assets/css/sidebar.css">
     <link rel="stylesheet" href="http://localhost/youcode/4test/view/assets/css/new_booking.css">
     <title>dashboard</title>
+
+
+    <!-- simple style for title -->
+    <style>
+        .title h3{
+            font-family: 'ubuntu';
+            font-weight: bold;
+            font-size: 1.5rem;
+            padding-top: 2rem;
+        }
+    </style>
+
+
 </head>
 <body id="body-pd">
+
+
+
+
 
     <!-- include sidebar -->
     <div class="l-navbar" id="navbar">
@@ -27,12 +44,12 @@
                         <i class="fa-solid fa-user" style="font-size: 1.5rem;"></i>
                         <span class="nav__name">Profile</span>
                     </a>
-                    <a href="http://localhost/youcode/4test/newbooking" class="nav__link active">
+                    <a href="http://localhost/youcode/4test/newbooking" class="nav__link ">
                         <i class="fa-solid fa-plus" style="font-size: 1.5rem;"></i>
                         <span class="nav__name">New Booking</span>
                     </a>
 
-                    <a href="http://localhost/youcode/4test/mytrips" class="nav__link">
+                    <a href="#" class="nav__link active">
                         <i class="fa-solid fa-suitcase-rolling" style="font-size: 1.5rem;"></i>
                         <span class="nav__name">My Trip</span>
                     </a>
@@ -52,52 +69,73 @@
 
 
 
-   
+    <!-- section -->
 
-    <!-- form search --> 
-    <div class="first-form">
-        <div class="first-title">
-            <!-- <span id="title">Book Your Trip Now</span> -->
-            <form class="first" action="http://localhost/youcode/4test/newBooking/searchClient" method="POST">
-                <div class="mb-3">
-                    <label class="form-label">Depart</label>
-                    <input type="text" name="depart" class="form-control" required >
-                </div>
-                <div class="mb-3">
-                    <label class="form-label">Arrive</label>
-                    <input type="text" name="arrive" class="form-control" required>
-                </div>
-                <div class="mb-3">
-                    <label class="form-label">Date de depart</label>
-                    <input type="date" name="day" class="form-control" id="PasteDate" required>
-                </div>
-                <button type="submit" name="submit" class="btn btn-primary btn-block mt-4 mb-3">Search</button>
-            </form>
-        </div>
+    <div class="title">
+        <h3>My Trips</h3>
     </div>
 
-    
+    <!-- table result of trip -->
+        <div class="table-responsive col-lg-10 m-auto border mt-5">
+			<table class="table table-hover table-borderless">
+				<thead class="table-dark">
+					<tr>
+						<th scope="col">Departure City</th>
+						<th scope="col">Arrival City</th>
+						<th scope="col">Date of Departure</th>
+						<th scope="col">Arrival Date</th>
+						<th scope="col">Price</th>
+						<th scope="col">Departure Day</th>
+						<!-- <th scope="col">Cancel</th> -->
+					</tr>
+				</thead>
+				<tbody>
+					<?php foreach($getTrips as $trips) : ?>
+					<tr>
+						<td><?php echo $trips['ville_de_depart']; ?></td>
+						<td><?php echo $trips['ville_darrivée'];?></td>
+						<td><?php echo $trips['date_de_depart']; ?></td>
+						<td><?php echo $trips['date_darrivée'];?></td>
+						<td><?php echo $trips['prix'];?></td> 
+						<td><?php echo $trips['jour_de_depart'];?></td> 
+						
+					</tr>
+                    <?php endforeach; ?>
+				</tbody>
+			</table>
+		</div>
 
-    
+
+
 
 
 
     
        
     
-    <!-- bootstrap -->
+    <!-- bootstrap -->  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- sidebar.js -->
     <script src="http://localhost/youcode/4test/view/assets/js/sidebar.js"></script>
     <script src="http://localhost/youcode/4test/view/assets/js/dashboard.js"></script>
 
-    <!-- Ionicons Icon website -->
+    <!-- Ionicons -->
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 
 
-    <!-- include js fille fore priveuse date -->
-    <script src="http://localhost/youcode/4test/view/assets/js/date.js"></script>
+    <!-- include for pop up modal -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap4.min.js"></script>
+
+
+    <!-- include js code from assets folder -->
+    <script src="http://localhost/youcode/4test/view/assets/js/popup.js"></script>
 
 
 </body>

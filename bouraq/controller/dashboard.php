@@ -23,6 +23,19 @@ session_start();
                 
             
             }
+
+            public function cancel($id)
+            {
+                $gets = new Display();
+                $gets->CancelTrip($id);
+
+                if($gets)
+                {
+                    header("Location:http://localhost/youcode/4test/dashboard");
+                }
+                
+
+            }
             
             
         }

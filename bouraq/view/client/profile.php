@@ -32,7 +32,7 @@
                         <span class="nav__name">New Booking</span>
                     </a>
 
-                    <a href="#" class="nav__link">
+                    <a href="http://localhost/youcode/4test/mytrips" class="nav__link">
                         <i class="fa-solid fa-suitcase-rolling" style="font-size: 1.5rem;"></i>
                         <span class="nav__name">My Trip</span>
                     </a>
@@ -62,7 +62,7 @@
             </div>
             <div class="title-bottom">
                 <h4 ><?=$_SESSION["name"]  ?></h4>
-                <a href="http://localhost/youcode/4test/updateClient" data-bs-toggle="modal" data-bs-target="#myModal" ><i class="fa-solid fa-pen" style="font-size: 1rem; color: #000;"></i></a>
+                <a href="http://localhost/youcode/4test/updateClient" data-bs-toggle="modal" data-bs-target="#UpdateModal" ><i class="fa-solid fa-pen" style="font-size: 1rem; color: #000;"></i></a>
             </div>
         </div>
         <div class="right">
@@ -87,7 +87,7 @@
 
     
 
-    <div class="modal" id="myModal">
+    <!-- <div class="modal" id="myModal">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -119,8 +119,51 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     
+
+    <!-- pop up modal with bootstrap   -->
+
+    <div class="modal fade" id="UpdateModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"> Trip Information </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <form action="http://localhost/youcode/4test/profile/update" method="POST">
+
+                    <div class="modal-body">
+
+                        <input type="hidden" name="update_id" id="update_id">
+                        
+                        <div class="form-group">
+                            <label> First Name </label>
+                            <input type="text" name="Fname" class="form-control" value="<?=$_SESSION["name"]?>"  >
+                        </div>
+                        <div class="form-group">
+                            <label> Last Name </label>
+                            <input type="text" name="Lname" class="form-control" value="<?=$_SESSION["second"]?>"  >
+                        </div>
+                        <div class="form-group">
+                            <label> Phone Number </label>
+                            <input type="text" name="phone" class="form-control" value="<?=$_SESSION["phone"]?>"  >
+                        </div>
+                        <div class="form-group">
+                            <label> Email Address </label>
+                            <input type="text" name="email" class="form-control" value="<?=$_SESSION["email"]?>"  >
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                        <button type="submit" name="update" value="<?=$_SESSION["idClient"]?>" class="btn btn-primary">Confirm</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
 
 
 

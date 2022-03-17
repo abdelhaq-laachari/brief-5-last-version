@@ -8,12 +8,14 @@
 .first-c{
     width: 98%;
     height: 80vh;
-    background-color: #42C2FF;
+    background-color: #F8F8F8;
     display: flex;
     gap: 2rem;
     margin-top: 1rem;
     border-radius: 5px;
     box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.308);
+    padding: 1rem;
 }
 .picture{
     width: 300px;
@@ -31,6 +33,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.308);
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.2);
+    border-radius: 5px;
 }
 .title-bottom{
     width: 90%;
@@ -51,7 +56,7 @@
     align-items: center;
 }
 .card-c{
-    background-color: #EFFFFD;
+    background-color: #FFF;
     width: 90%;
     height: 70px;
     display: flex;
@@ -59,6 +64,8 @@
     gap: 3rem;
     border-radius: 5px;
     padding: 0 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.308);
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.2);
 }
 .card-c h5{
     width: 30%;

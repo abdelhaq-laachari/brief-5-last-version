@@ -27,11 +27,35 @@ class Trip{
         unset($_SESSION['email']);
         unset($_SESSION['password']);
         session_destroy();
-        // print_r($_SESSION);
+
         header("Location: http://localhost/youcode/4test/home");
     }
 
+    public function AddTrip()
+    {
+        $depart = $_POST["Departure_City"];
+        $arrive = $_POST["Arrivale_City"];
+        $dateD = $_POST["Date_of_Departure"];
+        $dateA = $_POST["Arrival_Date"];
+        $prix = $_POST["Price"];
+        $dayD = $_POST["dayD"];
 
+        $insert = new AddTrip();
+        $insertTrips = $insert->insert($depart,$arrive,$dateD,$dateA,$prix,$dayD);
+
+        if(!$insertTrips)
+        {
+            echo"<script language=\"javascript\">";
+            echo"alert('Great  ')";
+            echo"</script>";
+            
+            header("Location:http://localhost/youcode/4test/dashboard");
+        }
+        else
+        {
+            echo "error";
+        }
+    }
 
 
     
