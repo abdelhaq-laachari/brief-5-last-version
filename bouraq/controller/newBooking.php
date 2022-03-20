@@ -28,10 +28,9 @@ session_start();
                     $depart = $_POST["depart"];
                     $arrive = $_POST["arrive"];
                     $day = $_POST["day"];
-                    $status = 1;
 
                     $gets = new Search();
-                    $getTrips = $gets->reserv($depart,$arrive,$day,$status);
+                    $getTrips = $gets->reserv($depart,$arrive,$day);
                     
                     if($getTrips)
                     {

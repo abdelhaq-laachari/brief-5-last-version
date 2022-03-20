@@ -10,9 +10,9 @@ class Update extends Connection
         $query = "UPDATE client SET name = '$Fname' , second = '$Lname' , phone = '$phone' , email = '$email'  WHERE idClient = '$id' ";
         $log = $this->conn()->prepare($query);
         $log->execute();
-    }
+    } 
 
 }
 
-
+ 
 ?>

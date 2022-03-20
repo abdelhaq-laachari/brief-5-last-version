@@ -147,7 +147,7 @@
                             <input type="text" name="Lname" class="form-control" value="<?=$_SESSION["second"]?>"  >
                         </div>
                         <div class="form-group">
-                            <label> Phone Number </label>
+                            <label> Phone Number </label> 
                             <input type="text" name="phone" class="form-control" value="<?=$_SESSION["phone"]?>"  >
                         </div>
                         <div class="form-group">

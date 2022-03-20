@@ -16,10 +16,9 @@ require_once __DIR__."/../model/booking.php";
                     $depart = $_POST["depart"];
                     $arrive = $_POST["arrive"];
                     $day = $_POST["day"];
-                    $status = 0;
 
                     $gets = new Search();
-                    $getTrips = $gets->reserv($depart,$arrive,$day,$status);
+                    $getTrips = $gets->reserv($depart,$arrive,$day);
                     
                     if($getTrips)
                     {

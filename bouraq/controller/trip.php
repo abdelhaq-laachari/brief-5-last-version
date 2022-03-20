@@ -39,9 +39,10 @@ class Trip{
         $dateA = $_POST["Arrival_Date"];
         $prix = $_POST["Price"];
         $dayD = $_POST["dayD"];
+        $status = "actived" ;
 
         $insert = new AddTrip();
-        $insertTrips = $insert->insert($depart,$arrive,$dateD,$dateA,$prix,$dayD);
+        $insertTrips = $insert->insert($depart,$arrive,$dateD,$dateA,$prix,$dayD,$status);
 
         if(!$insertTrips)
         {

@@ -100,7 +100,7 @@ body{
 }
 
 .icon-table{
-    width: 70px;
+    width: 100px;
     display: flex;
     justify-content: space-around;
 }

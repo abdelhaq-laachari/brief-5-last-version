@@ -6,13 +6,14 @@ class SignIn extends Connection
 
 {
     
-    public function signinClient($email,$password)
+    public function signinClient($email)
     {
         if(isset($_POST['submit']))
         {
 
            
-            $query = "SELECT * FROM `client` WHERE  email='$email' AND password='$password'";
+            // $query = "SELECT * FROM `client` WHERE  email='$email' AND password='$password'";
+            $query = "SELECT * FROM `client` WHERE  email='$email'";
             $log = $this->conn()->prepare($query);
             $log->execute();
             $res = $log->fetch(PDO::FETCH_ASSOC);

@@ -14,14 +14,18 @@ class Register extends Connection
         return $res;
     }
     
-    public function signupClient($name,$second,$phone,$email,$password)
+
+    // sign up method for new client 
+    public function signupClient($name,$second,$phone,$email,$hashed_password)
     {
         if(isset($_POST['submit']))
         {
 
            if($this->check($email)==null)
            {
-                $query = "INSERT INTO client (name, second, phone, email, password) VALUES ('$name', '$second', '$phone', '$email', '$password')";
+            //    insert data into table database
+            
+                $query = "INSERT INTO client (name, second, phone, email, password) VALUES ('$name', '$second', '$phone', '$email', '$hashed_password')";
                 $log = $this->conn()->prepare($query);
                 $log->execute();
            }

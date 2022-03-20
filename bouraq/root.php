@@ -1,7 +1,7 @@
 <?php 
 
 
-$params=explode("/", $_GET['p']);
+$params = explode("/", $_GET['p']);
 if (isset($params[0])&&!empty($params[0])) 
 {
 	$controller=ucfirst($params[0]);
