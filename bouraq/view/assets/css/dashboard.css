@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --bg-color:#F5F7FC;
+}
+
+
+body{
+    background-color: #F5F7FC ;
+    padding-top: 0.8rem !important;
+}
+
+.header{
+    width: 99%;
+    height: 70px;
+    padding: 0px 20px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.1);
+}
+
+.profile{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.pics{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.pics img{
+    width: 100%;
+    height: 100%;
+}
+
+.name{
+    display: flex;
+    flex-direction: column;
+
+}
+.title h5{
+    font-family: 'ubuntu';
+    font-weight: bold;
+}
+
+.first{
+    width: 98%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 2rem;
+    grid-column-gap: 2rem;
+    padding-top: 1rem;
+    
+}
+.card{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 1.5rem;
+    box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.1);
+}
+.card-title span{
+    font-weight: bold;
+}
+.card h5{
+    font-family: 'ubuntu';
+}
+.second{
+    width: 98%;
+    padding-top: 2rem;
+}
+
+.second-title{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.second-title h5{
+    font-size: 2rem;
+    font-family: 'ubuntu';
+    font-weight: bold;
+}
+
+.icon-table{
+    width: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+
+@media screen and (max-width: 800px){
+
+    .title{
+        width: 50%;
+    }
+    .title h5{
+        font-size: 1rem;
+    }
+    .profile{
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .name{
+        font-size: 0.8rem;
+    }
+
+    .first{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media screen and (max-width: 500px){
+
+    .title h5{
+        font-size: 0.8rem;
+    }
+    .name{
+        font-size: 0.7rem;
+    }
+    .pics{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .pics img{
+        width: 100%;
+        height: 100%;
+    }
+    .second-title h5{
+        font-size: 1.5rem;
+    }
+}
