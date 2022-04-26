@@ -10,12 +10,11 @@ class Search extends Connection
     public function reserv($depart,$arrive,$day)
     {
 
-        $query = "SELECT * FROM `trip` WHERE ville_de_depart = '$depart' AND ville_darrivée = '$arrive' AND jour_de_depart = '$day' AND status = 'Actived' ";
+        $query = "SELECT * FROM `trip` T, `train` Tr  WHERE T.ville_de_depart = '$depart' AND T.ville_darrivée = '$arrive' AND T.jour_de_depart = '$day' AND T.status = 'Actived' AND T.idTrain = Tr.idTrain AND Tr.seats > 0 ";
         $log = $this->conn()->prepare($query);
         $log->execute();
         $res = $log->fetchAll(PDO::FETCH_ASSOC);
         return $res; 
-       
     }
  
     
@@ -23,8 +22,7 @@ class Search extends Connection
     {
         $query = "INSERT INTO `booking`(`id_client`, `id_trip`) VALUES ('$idClient','$idTrip')";
         $new = $this->conn()->prepare($query);
-        $new->execute();
-        
+        $new->execute(); 
     }
 
     public function myTrips($idClient)

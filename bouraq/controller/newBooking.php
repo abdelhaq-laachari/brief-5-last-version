@@ -149,7 +149,7 @@ session_start();
                     $pdf->Ln(10);
                     $pdf->Output();
 
-                    header("Location:http://localhost/youcode/4test/myTrips");
+                    // header("Location:http://localhost/youcode/4test/myTrips");
                     
                 }
                 
